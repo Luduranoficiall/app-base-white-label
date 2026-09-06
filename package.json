@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "main": "index.ts",
   "dependencies": {
+    "@expo/metro-runtime": "~57.0.1",
     "expo": "~57.0.20",
     "expo-status-bar": "~57.0.1",
     "react": "19.2.3",
-    "react-native": "0.86.3"
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-web": "^0.21.2"
   },
   "devDependencies": {
+    "@types/node": "^26.4.1",
     "@types/react": "~19.2.2",
     "typescript": "~6.0.3"
   },
@@ -16,7 +20,10 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "test": "node --experimental-strip-types --test src/store/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "typecheck:tests": "tsc --noEmit -p tsconfig.test.json"
   },
   "private": true
 }
