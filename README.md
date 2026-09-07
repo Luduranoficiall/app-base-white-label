@@ -1,6 +1,6 @@
 # App Base (Template white-label)
 
-> **Demo ao vivo:** _(preencher depois do deploy)_
+> **Demo ao vivo:** <https://luduran-app-base-demo.vercel.app>
 
 Esqueleto reutilizável de app sob medida. Não é produto pra mostrar cliente, é ferramenta
 interna: em vez de recomeçar a arquitetura do zero em cada projeto novo (agendamento, pedido,
